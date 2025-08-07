@@ -38,16 +38,3 @@ Each fragment is accessible via a *Bottom Navigation Bar* and includes a clean a
 
 All screens contain the *bottom navigation bar* persistently, with respective fragment content displayed above it.
 
----
-
-## 🧩 App Structure
-
-```plaintext
-MainActivity.java
-├── BottomNavigationView (4 items)
-├── Fragment Container
-│   ├── NotesFragment.java
-│   ├── ReminderFragment.java
-│   ├── TimetableFragment.java
-│   └── CgpaFragment.java
-└── Common Include Layouts
