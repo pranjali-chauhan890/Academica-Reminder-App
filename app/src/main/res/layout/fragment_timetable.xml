@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Class to Timetable"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:gravity="center"
+        android:paddingBottom="12dp"/>
+
+    <!-- Subject Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/subjectInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Time Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Time (e.g., 10:00 AM)"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/timeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="time"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Add Class Button -->
+    <Button
+        android:id="@+id/addClassBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="➕       Add Class"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:backgroundTint="#2196F3"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:elevation="4dp" />
+
+    <!-- ListView -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Timetable:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#555"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"/>
+
+    <ListView
+        android:id="@+id/timetableListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:background="@android:color/white"
+        android:padding="4dp"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>

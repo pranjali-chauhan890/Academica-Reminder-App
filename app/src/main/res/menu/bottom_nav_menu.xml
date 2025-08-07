@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_notes"
+        android:title="Notes"
+        android:icon="@drawable/ic_notes" />
+
+    <item
+        android:id="@+id/nav_reminder"
+        android:title="Reminder"
+        android:icon="@drawable/ic_reminder" />
+
+    <item
+        android:id="@+id/nav_timetable"
+        android:title="Timetable"
+        android:icon="@drawable/ic_timetable" />
+
+    <item
+        android:id="@+id/nav_cgpa"
+        android:title="CGPA"
+        android:icon="@drawable/ic_cgpa" />
+</menu>
